@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISIONARY LAB 行銷顧問 | 轉化流量為商業增長 全漏斗品牌策略顧問</title>
+  <meta name="description" content="專為成長型企業提供實戰派行銷顧問、內容文案、SEO策略、社群操作、廣告投放優化、品牌官網建置與品牌策略，驅動可持續商業增長。立即預約線上 1-on-1 諮詢。">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6.5.1 Free CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <style>
+    :root {
+      --brand-primary: #2563eb;
+      --brand-primary-hover: #1d4ed8;
+      --brand-primary-light: #eff6ff;
+      --brand-primary-badge: #dbeafe;
+      --brand-accent: #3b82f6;
+      --brand-dark: #0f172a;
+      --brand-dark-card: #1e293b;
+      --text-main: #334155;
+      --text-heading: #0f172a;
+      --text-muted: #64748b;
+      --text-subtle: #94a3b8;
+      --bg-page: #f8fafc;
+      --bg-section-alt: #f1f5f9;
+      --bg-white: #ffffff;
+      --border-subtle: #e2e8f0;
+      --border-input: #cbd5e1;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+      --shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+      --transition: all 0.22s ease-in-out;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* 頂部導覽列 (Professional Polish Navbar) */
+    .custom-navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition);
+      z-index: 1030;
+    }
+
+    .navbar-brand {
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      font-size: 1.25rem;
+      color: var(--text-heading) !important;
+    }
+
+    .brand-logo-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-sm);
+      background-color: var(--brand-primary);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-main) !important;
+      padding: 0.5rem 0.9rem !important;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--brand-primary) !important;
+      background-color: var(--brand-primary-light);
+    }
+
+    .btn-nav-cta {
+      background-color: var(--brand-primary);
+      color: #ffffff !important;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      border: none;
+      transition: var(--transition);
+    }
+
+    .btn-nav-cta:hover {
+      background-color: var(--brand-primary-hover);
+      color: #ffffff !important;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* 英雄區塊 (Hero Section) */
+    .hero-section {
+      position: relative;
+      background-color: var(--bg-page);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 4.5rem 0 4rem;
+    }
+
+    .badge-pill-soft {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--brand-primary-light);
+      color: var(--brand-primary);
+      padding: 0.3rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(37, 99, 235, 0.15);
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 3.5vw + 1rem, 2.75rem);
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--text-heading);
+      letter-spacing: -0.03em;
+    }
+
+    .text-blue-accent {
+      color: var(--brand-primary);
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      line-height: 1.65;
+    }
+
+    .hero-stat-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .hero-stat-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-input);
+    }
+
+    .stat-number {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--brand-primary);
+      line-height: 1;
+    }
+
+    /* 區塊標題樣式 */
+    .section-header {
+      margin-bottom: 2.75rem;
+    }
+
+    .section-subtitle-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--brand-primary);
+      background-color: var(--brand-primary-light);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-main-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.025em;
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0.4rem auto 0;
+    }
+
+    /* 6 大核心服務卡片 (Professional Polish Core Services) */
+    .services-bg {
+      background-color: var(--bg-section-alt);
+    }
+
+    .service-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-input);
+    }
+
+    .service-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      transition: var(--transition);
+    }
+
+    /* Professional Polish 6 色主題方塊 */
+    .icon-box-orange {
+      background-color: #ffedd5;
+      color: #ea580c;
+    }
+    .icon-box-green {
+      background-color: #dcfce7;
+      color: #16a34a;
+    }
+    .icon-box-pink {
+      background-color: #fce7f3;
+      color: #db2777;
+    }
+    .icon-box-blue {
+      background-color: #dbeafe;
+      color: #2563eb;
+    }
+    .icon-box-indigo {
+      background-color: #e0e7ff;
+      color: #4f46e5;
+    }
+    .icon-box-purple {
+      background-color: #f3e8ff;
+      color: #9333ea;
+    }
+
+    .service-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 9999px;
+      background-color: var(--bg-section-alt);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .service-feature-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-feature-list li {
+      font-size: 0.85rem;
+      color: var(--text-main);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+    }
+
+    .service-feature-list li i {
+      color: var(--brand-primary);
+      font-size: 0.85rem;
+      margin-top: 2px;
+    }
+
+    .btn-service-select {
+      background-color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-service-select:hover {
+      background-color: var(--brand-primary);
+      border-color: var(--brand-primary);
+      color: #ffffff;
+    }
+
+    /* 關於我 (About Me) */
+    .about-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .avatar-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 3px solid #ffffff;
+      box-shadow: var(--shadow-md);
+    }
+
+    .avatar-badge {
+      position: absolute;
+      bottom: -8px;
+      right: -8px;
+      background: #16a34a;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      border: 2px solid #fff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pillar-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      transition: var(--transition);
+    }
+
+    .pillar-card:hover {
+      background: #ffffff;
+      border-color: var(--border-input);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* 案例展示 (Case Studies) */
+    .case-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .case-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-input);
+    }
+
+    .case-image-wrapper {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+      background-color: var(--brand-dark);
+    }
+
+    .case-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      opacity: 0.95;
+    }
+
+    .case-card:hover .case-image {
+      transform: scale(1.04);
+    }
+
+    .case-category-badge {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+    }
+
+    .metric-badge {
+      background: var(--bg-page);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem 0.75rem;
+    }
+
+    /* 篩選標籤按鈕 */
+    .filter-btn {
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border-subtle);
+      background: #ffffff;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--brand-dark);
+      color: #ffffff;
+      border-color: var(--brand-dark);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* ROI 效益試算互動工具 */
+    .calculator-card {
+      background: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .calculator-result-box {
+      background: var(--bg-section-alt);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+
+    /* 預約諮詢表單 (Contact / Booking) */
+    .contact-wrapper {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .contact-info-panel {
+      background-color: var(--brand-dark);
+      color: #ffffff;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .form-control, .form-select {
+      border: 1px solid var(--border-input);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.85rem;
+      font-size: 0.88rem;
+      color: var(--text-heading);
+      background-color: #ffffff;
+      transition: var(--transition);
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: var(--brand-primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      outline: none;
+    }
+
+    .form-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 0.35rem;
+    }
+
+    /* 服務項目快速多選膠囊 */
+    .service-pill-checkbox {
+      display: none;
+    }
+
+    .service-pill-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-page);
+      color: var(--text-main);
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+      margin-bottom: 0.4rem;
+      margin-right: 0.35rem;
+    }
+
+    .service-pill-checkbox:checked + .service-pill-label {
+      background: var(--brand-primary);
+      color: #ffffff;
+      border-color: var(--brand-primary);
+    }
+
+    /* 深色主按鈕 (Professional Polish Button) */
+    .btn-dark-brand {
+      background-color: var(--brand-dark);
+      color: #ffffff !important;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      transition: var(--transition);
+    }
+
+    .btn-dark-brand:hover {
+      background-color: #1e293b;
+      color: #ffffff !important;
+    }
+
+    .btn-blue-brand {
+      background-color: var(--brand-primary);
+      color: #ffffff !important;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: none;
+      transition: var(--transition);
+    }
+
+    .btn-blue-brand:hover {
+      background-color: var(--brand-primary-hover);
+      color: #ffffff !important;
+    }
+
+    /* 浮動諮詢快捷鍵 */
+    .floating-action-group {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 1020;
+    }
+
+    .floating-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-float-consult {
+      background: var(--brand-primary);
+      color: #ffffff;
+      border-color: var(--brand-primary);
+    }
+
+    .btn-float-consult:hover {
+      background: var(--brand-primary-hover);
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .btn-back-top {
+      background: #ffffff;
+      color: var(--text-heading);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .btn-back-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .btn-back-top:hover {
+      background: var(--bg-section-alt);
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      z-index: 1060;
+    }
+
+    /* FAQ 樣式 */
+    .accordion-button:not(.collapsed) {
+      background-color: var(--brand-primary-light);
+      color: var(--brand-primary);
+      box-shadow: none;
+      font-weight: 700;
+    }
+
+    .accordion-button {
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 1rem 1.25rem;
+      color: var(--text-heading);
+    }
+
+    .accordion-item {
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm) !important;
+      overflow: hidden;
+      margin-bottom: 0.65rem;
+    }
+
+    /* 頁尾樣式 (Professional Polish Footer) */
+    .footer-polish {
+      background-color: #ffffff;
+      color: var(--text-muted);
+      padding: 3.5rem 0 1.5rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+    }
+
+    .footer-heading {
+      color: var(--text-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: var(--transition);
+      font-size: 0.85rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--brand-primary);
+    }
+
+    /* 響應式優化 */
+    @media (max-width: 991px) {
+      .hero-section {
+        padding: 3.5rem 0 2.5rem;
+      }
+      .about-card, .contact-info-panel, .calculator-card {
+        padding: 1.75rem 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= 1. 頂部導覽列 (Navbar) ================= -->
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <!-- 左側 Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#heroSection">
+        <span class="brand-logo-icon">
+          <span>M</span>
+        </span>
+        <span class="fw-bold tracking-tight">VISIONARY LAB</span>
+      </a>
+
+      <!-- 手機版漢堡選單按鈕 -->
+      <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="切換導覽選單" id="navbarToggleBtn">
+        <i class="fa-solid fa-bars fs-2 text-dark"></i>
+      </button>
+
+      <!-- 右側 3 個按鈕 (關於我、服務項目、聯絡我們) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutSection" id="navLinkAbout">
+              <i class="fa-solid fa-id-badge d-lg-none me-2 text-primary"></i>關於我
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicesSection" id="navLinkServices">
+              <i class="fa-solid fa-grip d-lg-none me-2 text-primary"></i>服務項目
+            </a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-nav-cta d-inline-flex align-items-center gap-1" href="#contactSection" id="navBtnContact">
+              <i class="fa-solid fa-calendar-check me-1"></i>聯絡我們
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= 2. 英雄首頁區塊 (Hero Section) ================= -->
+  <section class="hero-section" id="heroSection">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="badge-pill-soft">
+            <i class="fa-solid fa-circle-check"></i> 前 500 大企業資深行銷總監 • 10+ 年實戰策略
+          </div>
+          <h1 class="hero-title mb-4">
+            轉化流量為銷量，<br>
+            以<span class="text-blue-accent">數據與策略</span>驅動企業持續增長
+          </h1>
+          <p class="hero-subtitle mb-4">
+            拒絕無效曝光與虛榮指標。結合「精準文案」、「SEO自然獲客」、「社群爆發」與「廣告ROI極大化」，為您的品牌打造可複製、可預測的商業增長引擎。
+          </p>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-5">
+            <a href="#contactSection" class="btn btn-primary btn-lg rounded-pill px-4 py-2.5 fw-bold shadow-sm d-flex align-items-center gap-2" id="heroCtaBook">
+              <i class="fa-solid fa-calendar-days"></i> 立即預約 1-on-1 諮詢
+            </a>
+            <a href="#casesSection" class="btn btn-outline-secondary btn-lg rounded-pill px-4 py-2.5 fw-semibold d-flex align-items-center gap-2 bg-white" id="heroCtaCases">
+              <i class="fa-solid fa-trophy"></i> 查看成功案例
+            </a>
+          </div>
+
+          <!-- 3 大關鍵成果數據背書 -->
+          <div class="row g-3">
+            <div class="col-4">
+              <div class="hero-stat-card text-center text-sm-start">
+                <div class="stat-number">4.2x</div>
+                <div class="small text-muted fw-semibold mt-1">平均 ROAS 提升</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="hero-stat-card text-center text-sm-start">
+                <div class="stat-number">+280%</div>
+                <div class="small text-muted fw-semibold mt-1">SEO 自然流量成長</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="hero-stat-card text-center text-sm-start">
+                <div class="stat-number">100+</div>
+                <div class="small text-muted fw-semibold mt-1">企業成功增長案例</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側快速健檢痛點卡片 -->
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <div class="card border rounded-4 p-4 bg-white shadow-sm position-relative" style="z-index: 2; border-color: var(--border-subtle) !important;">
+              <div class="d-flex align-items-center justify-content-between pb-3 border-bottom mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-envelope text-primary fs-5"></i>
+                  <span class="fw-bold text-dark fs-5">快速預約諮詢</span>
+                </div>
+                <span class="badge bg-primary-subtle text-primary fw-bold">剩餘 4 個專屬席次</span>
+              </div>
+              
+              <div class="p-3 bg-light rounded-3 mb-3 border">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="fw-bold text-dark small">首次 1-on-1 商業診斷</span>
+                  <span class="badge bg-success text-white">免費 30 分鐘</span>
+                </div>
+                <ul class="list-unstyled mb-0 small text-secondary">
+                  <li class="mb-1.5"><i class="fa-solid fa-circle-check text-primary me-2"></i>1. 全站流量與廣告帳戶健檢</li>
+                  <li class="mb-1.5"><i class="fa-solid fa-circle-check text-primary me-2"></i>2. 競品攻防定位與受眾破局點</li>
+                  <li><i class="fa-solid fa-circle-check text-primary me-2"></i>3. 客製化 90 天增長行動路線圖</li>
+                </ul>
+              </div>
+
+              <div>
+                <label class="form-label text-muted small mb-1">您目前最希望突破的瓶頸？</label>
+                <select class="form-select mb-3 text-dark fw-medium" id="heroQuickPainPoint">
+                  <option value="廣告成效分析與優化">廣告費越來越貴、ROAS 始終無法突破</option>
+                  <option value="SEO策略優化">網站沒自然流量，完全依賴付費廣告</option>
+                  <option value="內容文案寫手">點擊率不錯但跳出率高，轉換文案缺乏說服力</option>
+                  <option value="品牌策略">品牌同質化嚴重，陷入低價削價競爭</option>
+                  <option value="建置品牌官網">官網老舊、手機體驗差，影響品牌形象</option>
+                  <option value="社群操作">社群互動冷清、無法帶動真實銷售</option>
+                </select>
+                <button class="btn btn-dark-brand btn-sm w-100 py-2" id="heroQuickSubmitBtn">
+                  帶入此痛點並預約顧問 <i class="fa-solid fa-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. 關於我區塊 (About Me Section) ================= -->
+  <section class="py-5 bg-white border-bottom" id="aboutSection">
+    <div class="container py-4">
+      <div class="about-card">
+        <div class="row align-items-center g-5">
+          <div class="col-md-4 text-center">
+            <div class="avatar-wrapper mb-4">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="行銷顧問 艾力克斯 Alex" class="avatar-img" id="consultantAvatar">
+              <span class="avatar-badge">
+                <i class="fa-solid fa-shield-halved me-1"></i>Certified Strategist
+              </span>
+            </div>
+            <h3 class="fw-bold text-dark mb-1">Alex Chen 陳威宇</h3>
+            <p class="text-primary fw-semibold small mb-3">首席全案行銷增長顧問</p>
+            <div class="d-flex justify-content-center gap-2">
+              <span class="badge bg-light text-secondary border">Google 官方認證專家</span>
+              <span class="badge bg-light text-secondary border">Meta 認證媒體購買師</span>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <span class="section-subtitle-tag">ABOUT ME</span>
+            <h2 class="fw-bold text-dark mb-3">「行銷不是花錢買熱鬧，而是用科學方法獲取利潤」</h2>
+            <p class="text-secondary mb-4">
+              我是 Alex，擁有超過 10 年跨國品牌與電商實戰增長經驗，曾主導超過 3 億新台幣廣告預算運營，協助 100+ 家企業從 0 到 1 建立獲利閉環。我堅持<b>「以數據為骨骼、以洞察為靈魂」</b>，不談空泛理論，只提供能落地執行的策略方案。
+            </p>
+
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="pillar-card h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-binoculars text-primary fs-5"></i>
+                    <h6 class="fw-bold mb-0 text-dark">深度市場與受眾洞察</h6>
+                  </div>
+                  <p class="small text-muted mb-0">拋棄主觀直覺，從用戶搜索習慣、競品缺口與真實痛點切入。</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="pillar-card h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-filter text-primary fs-5"></i>
+                    <h6 class="fw-bold mb-0 text-dark">全漏斗整合行銷架構</h6>
+                  </div>
+                  <p class="small text-muted mb-0">無縫串聯曝光、獲客、培育、轉換與高價值回購各個階段。</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="pillar-card h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-chart-line text-primary fs-5"></i>
+                    <h6 class="fw-bold mb-0 text-dark">科學化數據歸因與測試</h6>
+                  </div>
+                  <p class="small text-muted mb-0">嚴謹進行 A/B 測試與歸因模型分析，讓每一分預算發揮最大價值。</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="pillar-card h-100">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fa-solid fa-award text-primary fs-5"></i>
+                    <h6 class="fw-bold mb-0 text-dark">長期可累積的品牌資產</h6>
+                  </div>
+                  <p class="small text-muted mb-0">建立 SEO 自然流量與高忠誠社群，降低對單一付費廣告的依賴。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. 6 大核心服務項目 (Core Services Section) ================= -->
+  <section class="py-5 services-bg" id="servicesSection">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-subtitle-tag">SERVICES</span>
+        <h2 class="section-main-title">6 大核心專業服務</h2>
+        <p class="section-desc">從內容力、自然流量、社群擴散到付費轉化與品牌護城河，提供全方位的商業賦能解決方案</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 服務 1: 內容文案寫手 (橘色方塊) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card" id="cardServiceCopywriting">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="service-icon-box icon-box-orange">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <span class="service-tag">高轉換文案</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-2">內容文案寫手</h4>
+            <p class="text-secondary small mb-3">
+              精準鎖定受眾痛點，用文字建立信任與轉換。運用行為心理學，撰寫直擊心智的高轉換銷售文案。
+            </p>
+            <ul class="service-feature-list flex-grow-1">
+              <li><i class="fa-solid fa-circle-check"></i> 高轉換 Landing Page 銷售頁文案</li>
+              <li><i class="fa-solid fa-circle-check"></i> 品牌故事包裝與核心Slogan梳理</li>
+              <li><i class="fa-solid fa-circle-check"></i> 高點擊 Meta/Google 廣告文案矩陣</li>
+              <li><i class="fa-solid fa-circle-check"></i> 會員 EDM 行銷與私域導流腳本</li>
+            </ul>
+            <button class="btn btn-service-select service-select-btn" data-service="內容文案寫手">
+              預約此項目諮詢 <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 服務 2: SEO策略優化 (綠色方塊) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card" id="cardServiceSeo">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="service-icon-box icon-box-green">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <span class="service-tag">自然流量引擎</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-2">SEO策略優化</h4>
+            <p class="text-secondary small mb-3">
+              佔據關鍵字搜尋首頁，獲得穩定且精準的自然流量。建立 24 小時不間斷的被動獲客管道。
+            </p>
+            <ul class="service-feature-list flex-grow-1">
+              <li><i class="fa-solid fa-circle-check"></i> 全站 Technical SEO 體質審計</li>
+              <li><i class="fa-solid fa-circle-check"></i> 高意圖關鍵字地圖（Keyword Mapping）</li>
+              <li><i class="fa-solid fa-circle-check"></i> 權威反向連結與內容主題群（Topic Cluster）</li>
+              <li><i class="fa-solid fa-circle-check"></i> Core Web Vitals 載入體驗優化</li>
+            </ul>
+            <button class="btn btn-service-select service-select-btn" data-service="SEO策略優化">
+              預約此項目諮詢 <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 服務 3: 社群操作 (粉色方塊) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card" id="cardServiceSocial">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="service-icon-box icon-box-pink">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <span class="service-tag">粉絲黏著與裂變</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-2">社群操作</h4>
+            <p class="text-secondary small mb-3">
+              品牌故事化社群經營，提升粉絲黏著度與互動率。佈局 IG、FB、Threads 與 LINE 官方帳號。
+            </p>
+            <ul class="service-feature-list flex-grow-1">
+              <li><i class="fa-solid fa-circle-check"></i> 品牌社群風格人設與視覺規範</li>
+              <li><i class="fa-solid fa-circle-check"></i> 爆款短影音與互動貼文腳本規劃</li>
+              <li><i class="fa-solid fa-circle-check"></i> LINE 官方帳號分眾標籤與自動化旅程</li>
+              <li><i class="fa-solid fa-circle-check"></i> KOL / KOC 網紅合作媒合與效益評估</li>
+            </ul>
+            <button class="btn btn-service-select service-select-btn" data-service="社群操作">
+              預約此項目諮詢 <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 服務 4: 廣告成效分析與優化 (藍色方塊) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card" id="cardServiceAds">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="service-icon-box icon-box-blue">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <span class="service-tag">極致 ROAS 提升</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-2">廣告成效分析與優化</h4>
+            <p class="text-secondary small mb-3">
+              投放 ROAS 極大化，讓每一塊廣告預算都發揮價值。深度重構 Meta、Google Ads 帳戶架構。
+            </p>
+            <ul class="service-feature-list flex-grow-1">
+              <li><i class="fa-solid fa-circle-check"></i> 廣告帳戶歷史數據深度診斷健檢</li>
+              <li><i class="fa-solid fa-circle-check"></i> 全漏斗受眾分層與再行銷（Retargeting）</li>
+              <li><i class="fa-solid fa-circle-check"></i> 創意素材切角測試與動態出價優化</li>
+              <li><i class="fa-solid fa-circle-check"></i> GA4 與伺服器端 CAPI 追蹤代碼部署</li>
+            </ul>
+            <button class="btn btn-service-select service-select-btn" data-service="廣告成效分析與優化">
+              預約此項目諮詢 <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 服務 5: 建置品牌官網 (靛藍色方塊) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card" id="cardServiceWeb">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="service-icon-box icon-box-indigo">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="service-tag">高轉換官方門面</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-2">建置品牌官網</h4>
+            <p class="text-secondary small mb-3">
+              高效能響應式網站，完美展現品牌形象與價值。結合現代化 UI/UX 與極速載入技術。
+            </p>
+            <ul class="service-feature-list flex-grow-1">
+              <li><i class="fa-solid fa-circle-check"></i> 現代化品牌視覺 UI/UX 設計規範</li>
+              <li><i class="fa-solid fa-circle-check"></i> 100% 響應式手機/平板/電腦無縫自適應</li>
+              <li><i class="fa-solid fa-circle-check"></i> 極速載入架構與 SEO 友善語意化標籤</li>
+              <li><i class="fa-solid fa-circle-check"></i> 線上表單、金物流與轉換追蹤代碼整合</li>
+            </ul>
+            <button class="btn btn-service-select service-select-btn" data-service="建置品牌官網">
+              預約此項目諮詢 <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 服務 6: 品牌策略 (紫色方塊) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card" id="cardServiceStrategy">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="service-icon-box icon-box-purple">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+              <span class="service-tag">商業定位與破局</span>
+            </div>
+            <h4 class="fw-bold text-dark mb-2">品牌策略</h4>
+            <p class="text-secondary small mb-3">
+              從市場定位到品牌重塑，建立長期的護城河優勢。梳理目標人物誌與 Go-To-Market 策略。
+            </p>
+            <ul class="service-feature-list flex-grow-1">
+              <li><i class="fa-solid fa-circle-check"></i> 品牌定位圖與競品差異化價值主張</li>
+              <li><i class="fa-solid fa-circle-check"></i> 目標受眾 Persona 與消費者決策旅程</li>
+              <li><i class="fa-solid fa-circle-check"></i> 新品上市 GTM 策略與定價包裝建議</li>
+              <li><i class="fa-solid fa-circle-check"></i> 年度整合行銷預算配置與 OKR 制定</li>
+            </ul>
+            <button class="btn btn-service-select service-select-btn" data-service="品牌策略">
+              預約此項目諮詢 <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. 客戶成功案例展示 (Case Studies Section) ================= -->
+  <section class="py-5 bg-white border-top" id="casesSection">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-subtitle-tag">CASE STUDIES</span>
+        <h2 class="section-main-title">實戰成功客戶案例</h2>
+        <p class="section-desc">透過可被驗證的數據成果，見證各行各業客戶如何在關鍵指標上實現倍數成長</p>
+
+        <!-- 案例分類切換按鈕 -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="caseFilterButtonGroup">
+          <button class="filter-btn active" data-filter="all">全部案例 (6)</button>
+          <button class="filter-btn" data-filter="ecommerce">電商品牌 (2)</button>
+          <button class="filter-btn" data-filter="b2b">B2B 科技企業 (2)</button>
+          <button class="filter-btn" data-filter="retail">實體門市零售 (2)</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="casesContainer">
+        <!-- 案例 1: 電商品牌 -->
+        <div class="col-md-6 col-lg-4 case-item" data-category="ecommerce">
+          <div class="case-card">
+            <div class="case-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="女裝電商品牌" class="case-image">
+              <span class="case-category-badge">女裝電商品牌</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-dark mb-2">90 天廣告架構重構，ROAS 提升 155%</h5>
+              <p class="text-secondary small mb-3 flex-grow-1">
+                面臨獲客成本暴增痛點，透過重新梳理受眾層級、素材切角測試與高轉換著陸頁文案，成功破局。
+              </p>
+              <div class="metric-badge d-flex justify-content-between align-items-center mb-3">
+                <span class="small text-muted">關鍵成果：</span>
+                <span class="fw-bold text-primary">ROAS 1.8 ➔ 4.6 (+155%)</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill w-100 view-case-btn" 
+                      data-title="女裝電商品牌：廣告架構重構與文案策略"
+                      data-industry="流行女裝電商"
+                      data-services="廣告成效優化 + 文案策略"
+                      data-results="ROAS 從 1.8 攀升至 4.6；CPA 降低 42%；90 天內新客訂單成長 220%。"
+                      data-detail="透過重構 Meta 廣告受眾漏斗，將預算集中在具有高購買意圖的時尚穿搭受眾，並配合痛點式 A/B 測試文案，成功帶動大檔期爆發。">
+                查看策略細節 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 案例 2: B2B 科技企業 -->
+        <div class="col-md-6 col-lg-4 case-item" data-category="b2b">
+          <div class="case-card">
+            <div class="case-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="B2B SaaS 企業" class="case-image">
+              <span class="case-category-badge">B2B SaaS 軟體</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-dark mb-2">SEO主題群佈局，自然搜尋流量暴增 320%</h5>
+              <p class="text-secondary small mb-3 flex-grow-1">
+                規劃 18 組核心商業關鍵字主題群，並優化網站技術架構，大幅降低了依賴昂貴 Google Ads 的負擔。
+              </p>
+              <div class="metric-badge d-flex justify-content-between align-items-center mb-3">
+                <span class="small text-muted">關鍵成果：</span>
+                <span class="fw-bold text-success">自然詢問量成長 +320%</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill w-100 view-case-btn" 
+                      data-title="B2B SaaS 企業：SEO自然流量引擎建置"
+                      data-industry="企業級 SaaS 軟體服務"
+                      data-services="SEO策略佈局 + 官網體驗改版"
+                      data-results="核心商業關鍵字 18 組登上 Google 搜尋前 3 名；自然流量轉化率提升 180%。"
+                      data-detail="執行 Technical SEO 修復與高權重主題群架構，並重新設計官網 Demo 預約流程，大幅降低註冊門檻與跳出率。">
+                查看策略細節 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 案例 3: 實體門市零售 -->
+        <div class="col-md-6 col-lg-4 case-item" data-category="retail">
+          <div class="case-card">
+            <div class="case-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="連鎖餐飲集團" class="case-image">
+              <span class="case-category-badge">連鎖餐飲品牌</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-dark mb-2">社群裂變 + LINE私域，創造千萬線下營收</h5>
+              <p class="text-secondary small mb-3 flex-grow-1">
+                整合 Instagram 爆款視覺素材與 LINE 官方帳號分眾標籤推播，精準帶動會員回訪線下門市消費。
+              </p>
+              <div class="metric-badge d-flex justify-content-between align-items-center mb-3">
+                <span class="small text-muted">關鍵成果：</span>
+                <span class="fw-bold text-primary">新客累積 100k+ / 核銷破千萬</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill w-100 view-case-btn" 
+                      data-title="連鎖餐飲品牌：社群裂變與私域流量沉澱"
+                      data-industry="連鎖餐飲餐飲業"
+                      data-services="社群操作 + LINE私域經營"
+                      data-results="LINE官方帳號累積 100,000+ 真實會員；線下門市憑券核銷營收突破千萬。"
+                      data-detail="設計趣味社群互動與好友推薦裂變機制，搭配自動化分眾推播，成功喚醒沉睡顧客並帶動回訪消費。">
+                查看策略細節 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 案例 4: 電商品牌 2 -->
+        <div class="col-md-6 col-lg-4 case-item" data-category="ecommerce">
+          <div class="case-card">
+            <div class="case-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="保健品品牌" class="case-image">
+              <span class="case-category-badge">健康生技保健</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-dark mb-2">新品發佈 GTM 策略，首季營收突破 1200 萬</h5>
+              <p class="text-secondary small mb-3 flex-grow-1">
+                從痛點切入重塑定價與產品說服邏輯，結合專業醫師背書文案與精準受眾投放，引爆首波預購熱潮。
+              </p>
+              <div class="metric-badge d-flex justify-content-between align-items-center mb-3">
+                <span class="small text-muted">關鍵成果：</span>
+                <span class="fw-bold text-success">首季突破 NT$ 12,000,000</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill w-100 view-case-btn" 
+                      data-title="健康生技保健：新品上市整合行銷戰役"
+                      data-industry="保健食品電商"
+                      data-services="GTM品牌定位 + 痛點文案 + 漏斗投放"
+                      data-results="3 個月內創造 12,000,000 元銷售額，獲得各大主流媒體主動報導。"
+                      data-detail="透過專業醫學背書與清晰圖解文案，化解消費者信任門檻，建立高效預購與再行銷閉環。">
+                查看策略細節 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 案例 5: 實體門市零售 2 -->
+        <div class="col-md-6 col-lg-4 case-item" data-category="retail">
+          <div class="case-card">
+            <div class="case-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="醫美連鎖診所" class="case-image">
+              <span class="case-category-badge">醫美生技連鎖</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-dark mb-2">短影音行銷矩陣，預約到店率提升 210%</h5>
+              <p class="text-secondary small mb-3 flex-grow-1">
+                針對換季護膚痛點製作 30+ 支爆款 Reels 與短影音，搭配客製化 Landing Page 引導，大幅縮短決策路徑。
+              </p>
+              <div class="metric-badge d-flex justify-content-between align-items-center mb-3">
+                <span class="small text-muted">關鍵成果：</span>
+                <span class="fw-bold text-primary">預約到店率 +210%</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill w-100 view-case-btn" 
+                      data-title="醫美連鎖診所：短影音矩陣爆發"
+                      data-industry="醫美與專業護膚"
+                      data-services="短影音行銷 + 痛點文案腳本"
+                      data-results="Instagram Reels / TikTok 累積突破 250 萬次自然播放，品牌關鍵字熱度上升 300%。"
+                      data-detail="精準抓住換季肌膚痛點，產出高共鳴真人實測短影音，搭配限時促銷直接導流至專屬 Landing Page 轉換。">
+                查看策略細節 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 案例 6: B2B 科技 2 -->
+        <div class="col-md-6 col-lg-4 case-item" data-category="b2b">
+          <div class="case-card">
+            <div class="case-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="工業物聯網製造" class="case-image">
+              <span class="case-category-badge">工業自動化硬體</span>
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold text-dark mb-2">品牌官網升級，海外高價值詢盤增長 3.1 倍</h5>
+              <p class="text-secondary small mb-3 flex-grow-1">
+                重新設計多語系響應式官方網站，優化產品技術規格呈現與下載流程，成功打入歐美一線供應鏈。
+              </p>
+              <div class="metric-badge d-flex justify-content-between align-items-center mb-3">
+                <span class="small text-muted">關鍵成果：</span>
+                <span class="fw-bold text-success">海外詢價單 +310%</span>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm rounded-pill w-100 view-case-btn" 
+                      data-title="工業自動化硬體：全球化品牌官網重塑"
+                      data-industry="工業物聯網製造"
+                      data-services="國際多語系官網建置 + 品牌策略定位"
+                      data-results="成功打入歐美一線供應鏈體系，海外高價值詢盤增長 310%。"
+                      data-detail="重塑國際化品牌視覺形象，建立技術白皮書與案例下載機制，成功贏得海外採購經理的高度信賴。">
+                查看策略細節 <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. 互動式行銷 ROI 效益試算器 (Calculator Section) ================= -->
+  <section class="py-5 bg-light border-top">
+    <div class="container py-4">
+      <div class="calculator-card">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-subtitle-tag">ROI CALCULATOR</span>
+            <h3 class="fw-bold text-dark mb-3">
+              <i class="fa-solid fa-calculator text-primary me-2"></i>90 天行銷增長效益即時試算
+            </h3>
+            <p class="text-secondary small mb-4">
+              拖動滑桿設定您目前的每月行銷預算，即時預估由專業顧問介入優化後的營收增長潛力與效益指標。
+            </p>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label for="budgetRange" class="form-label mb-0 fw-bold">每月預估行銷預算 (NTD)：</label>
+                <span class="badge bg-primary fs-6 px-3 py-1" id="budgetDisplay">NT$ 100,000</span>
+              </div>
+              <input type="range" class="form-range" min="30000" max="1000000" step="10000" value="100000" id="budgetRange">
+              <div class="d-flex justify-content-between text-muted" style="font-size: 0.75rem;">
+                <span>NT$ 30,000 (初期測試)</span>
+                <span>NT$ 500,000</span>
+                <span>NT$ 1,000,000+ (規模擴張)</span>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="calcIndustry" class="form-label fw-bold">所屬產業類別：</label>
+              <select class="form-select" id="calcIndustry">
+                <option value="2.5" selected>電子商務與品牌零售 (高週轉/高轉化)</option>
+                <option value="3.2">B2B 企業服務與科技軟體 (高客單價)</option>
+                <option value="2.0">實體門市與在地生活餐飲 (高回購)</option>
+                <option value="2.8">專業諮詢與教育培訓 (高利潤)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="calculator-result-box">
+              <h5 class="fw-bold text-dark mb-4 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-arrow-trend-up text-primary"></i> 預估 90 天優化成效指標
+              </h5>
+
+              <div class="row g-3 mb-4">
+                <div class="col-6">
+                  <div class="p-3 bg-white rounded-3 border">
+                    <span class="d-block text-muted small mb-1">預估增長營收</span>
+                    <span class="fs-4 fw-bold text-primary" id="estRevenue">+ NT$ 430,000</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 bg-white rounded-3 border">
+                    <span class="d-block text-muted small mb-1">目標目標 ROAS</span>
+                    <span class="fs-4 fw-bold text-success" id="estRoas">4.3x 預估回報</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 bg-white rounded-3 border">
+                    <span class="d-block text-muted small mb-1">CPA 獲客成本降幅</span>
+                    <span class="fs-5 fw-bold text-dark" id="estCpa">-30% ~ -45%</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 bg-white rounded-3 border">
+                    <span class="d-block text-muted small mb-1">自然流量增長預估</span>
+                    <span class="fs-5 fw-bold text-dark" id="estTraffic">+ 220%</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contactSection" class="btn btn-primary w-100 py-3 fw-bold rounded-pill shadow-sm d-flex align-items-center justify-content-center gap-2" id="calcApplyBtn">
+                <span>索取專屬您的客製化策略企劃書</span> <i class="fa-solid fa-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. 4 步顧問合作流程 (Workflow Section) ================= -->
+  <section class="py-5 bg-white border-top">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-subtitle-tag">WORKFLOW</span>
+        <h2 class="section-main-title">4 步驟標準化顧問合作流程</h2>
+        <p class="section-desc">嚴謹、敏捷且透明的執行步驟，確保每一階段的產出皆能精準對齊商業目標</p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light h-100 position-relative">
+            <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 rounded-pill px-3 py-1">Step 01</span>
+            <div class="mt-4 pt-2">
+              <i class="fa-solid fa-list-check fs-1 text-primary mb-3 d-block"></i>
+              <h5 class="fw-bold text-dark">填寫線上預約需求</h5>
+              <p class="text-muted small mb-0">於下方表單提供您的品牌現況、預算與面臨的主要行銷難題。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light h-100 position-relative">
+            <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 rounded-pill px-3 py-1">Step 02</span>
+            <div class="mt-4 pt-2">
+              <i class="fa-solid fa-video fs-1 text-primary mb-3 d-block"></i>
+              <h5 class="fw-bold text-dark">30分鐘 1-on-1 診斷</h5>
+              <p class="text-muted small mb-0">透過線上會議針對網站、廣告帳戶與受眾漏斗進行即時深度健檢。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light h-100 position-relative">
+            <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 rounded-pill px-3 py-1">Step 03</span>
+            <div class="mt-4 pt-2">
+              <i class="fa-solid fa-file-lines fs-1 text-primary mb-3 d-block"></i>
+              <h5 class="fw-bold text-dark">客製化策略企劃提案</h5>
+              <p class="text-muted small mb-0">交付具體可行之 90 天執行 Roadmap、預算分配建議與 KPI 指標。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="p-4 rounded-4 border bg-light h-100 position-relative">
+            <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 rounded-pill px-3 py-1">Step 04</span>
+            <div class="mt-4 pt-2">
+              <i class="fa-solid fa-trophy fs-1 text-primary mb-3 d-block"></i>
+              <h5 class="fw-bold text-dark">落地執行與成效複盤</h5>
+              <p class="text-muted small mb-0">顧問深度陪跑，定期審視數據報表，敏捷迭代優化以確保達標。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. 客戶口碑評價 (Testimonials) ================= -->
+  <section class="py-5 bg-light border-top">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-subtitle-tag">TESTIMONIALS</span>
+        <h2 class="section-main-title">合作客戶真實反饋</h2>
+        <p class="section-desc">看看與我們長期合作的企業創辦人與行銷主管怎麼說</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+            <div class="text-warning mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              「Alex 顧問的分析切中要害！以前我們的廣告 ROAS 始終卡在 1.5 左右，經過他重新梳理文案痛點與漏斗架構後，兩個月內 ROAS 衝上 4.2，真的非常專業！」
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" alt="王總經理" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;">
+              <div>
+                <h6 class="fw-bold text-dark mb-0 small">王思涵 Elena</h6>
+                <span class="text-muted" style="font-size: 0.75rem;">流行服飾品牌 創辦人</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+            <div class="text-warning mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              「從來沒想過 SEO 自然流量可以為我們帶來這麼多高質量的 B2B 詢問單！官網改版後載入速度大幅提升，客戶在電話裡都誇我們的品牌門面很有質感。」
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="張執行長" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;">
+              <div>
+                <h6 class="fw-bold text-dark mb-0 small">張家豪 Kevin</h6>
+                <span class="text-muted" style="font-size: 0.75rem;">雲端軟體科技 共同創辦人</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+            <div class="text-warning mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-secondary small mb-4 flex-grow-1">
+              「行銷顧問最怕遇到只會講空話的講師，但 Alex 是真正的實戰派。手把手帶領我們團隊設定 LINE 分眾標籤，當季營收直接超標 150%，推薦給所有想突破瓶頸的品牌！」
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="林總監" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;">
+              <div>
+                <h6 class="fw-bold text-dark mb-0 small">林佳蓉 Emily</h6>
+                <span class="text-muted" style="font-size: 0.75rem;">連鎖餐飲集團 行銷總監</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. 預約諮詢表單區塊 (Contact & Booking Section) ================= -->
+  <section class="py-5 bg-white border-top" id="contactSection">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-subtitle-tag">GET IN TOUCH</span>
+        <h2 class="section-main-title">預約 1-on-1 顧問策略諮詢</h2>
+        <p class="section-desc">填寫下方表單，顧問團隊將在 24 小時內與您取得聯繫，為您安排專屬的線上策略會議</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="row g-0">
+          <!-- 左側資訊面板 (深色高階質感) -->
+          <div class="col-lg-4 contact-info-panel">
+            <div>
+              <span class="badge bg-primary text-white mb-3">CONSULTATION</span>
+              <h4 class="fw-bold text-white mb-3">啟動您的商業成長引擎</h4>
+              <p class="text-white-50 small mb-4">
+                無論您是需要單點突破（文案/SEO/廣告）還是需要全漏斗品牌顧問陪跑，我們都能為您量身打造最佳解方。
+              </p>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white bg-opacity-10 p-2 d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px;">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="d-block text-white-50" style="font-size: 0.75rem;">電子郵件</span>
+                    <span class="fw-semibold text-white small">alex.consultant@visionarylab.com</span>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white bg-opacity-10 p-2 d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px;">
+                    <i class="fa-brands fa-line text-success"></i>
+                  </div>
+                  <div>
+                    <span class="d-block text-white-50" style="font-size: 0.75rem;">官方 LINE 諮詢專線</span>
+                    <span class="fw-semibold text-white small">@visionary_lab (專人快速回覆)</span>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white bg-opacity-10 p-2 d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px;">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                  </div>
+                  <div>
+                    <span class="d-block text-white-50" style="font-size: 0.75rem;">顧問工作室據點</span>
+                    <span class="fw-semibold text-white small">台北市信義區松智路 1 號（微風南山）</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 服務承諾保證 -->
+            <div class="p-3 rounded-3 bg-white bg-opacity-10 border border-white border-opacity-10 mt-3">
+              <h6 class="fw-bold text-white small mb-1"><i class="fa-solid fa-shield-halved text-warning me-1"></i> 隱私與保密協議承諾</h6>
+              <p class="text-white-50 small mb-0" style="font-size: 0.78rem;">
+                您所填寫的所有商業數據、預算與痛點資訊均嚴格遵守保密協議（NDA），絕不外洩。
+              </p>
+            </div>
+          </div>
+
+          <!-- 右側表單面板 (純白底色) -->
+          <div class="col-lg-8 p-4 p-md-5 bg-white">
+            <form id="consultationBookingForm" novalidate>
+              <div class="row g-3">
+                <!-- 欄位 1: 姓名 (必填) -->
+                <div class="col-md-6">
+                  <label for="clientName" class="form-label">
+                    您的姓名 / 稱呼 <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" id="clientName" placeholder="例如：陳大明 先生/女士" required>
+                  </div>
+                  <div class="invalid-feedback">請填寫您的姓名或稱呼</div>
+                </div>
+
+                <!-- 欄位 2: 電子郵件 (必填) -->
+                <div class="col-md-6">
+                  <label for="clientEmail" class="form-label">
+                    電子郵件 Email <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" class="form-control" id="clientEmail" placeholder="name@company.com" required>
+                  </div>
+                  <div class="invalid-feedback">請輸入有效的電子郵件地址</div>
+                </div>
+
+                <!-- 欄位 3: 聯絡電話 (必填) -->
+                <div class="col-md-6">
+                  <label for="clientPhone" class="form-label">
+                    聯絡電話 / 手機 <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-phone"></i></span>
+                    <input type="tel" class="form-control" id="clientPhone" placeholder="例如：0912-345-678" required>
+                  </div>
+                  <div class="invalid-feedback">請填寫聯絡電話</div>
+                </div>
+
+                <!-- 欄位 4: 公司或品牌名稱 (選填) -->
+                <div class="col-md-6">
+                  <label for="companyName" class="form-label">
+                    公司名稱 / 品牌名稱
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-building"></i></span>
+                    <input type="text" class="form-control" id="companyName" placeholder="例如：極致選品有限公司">
+                  </div>
+                </div>
+
+                <!-- 欄位 5: 諮詢服務項目 (可多選) -->
+                <div class="col-12">
+                  <label class="form-label d-block mb-2">
+                    感興趣的顧問服務項目 (可多選)：
+                  </label>
+                  <div class="d-flex flex-wrap" id="serviceSelectionGroup">
+                    <input type="checkbox" class="service-pill-checkbox" id="srvCopy" value="內容文案寫手">
+                    <label class="service-pill-label" for="srvCopy">內容文案寫手</label>
+
+                    <input type="checkbox" class="service-pill-checkbox" id="srvSeo" value="SEO策略優化">
+                    <label class="service-pill-label" for="srvSeo">SEO策略優化</label>
+
+                    <input type="checkbox" class="service-pill-checkbox" id="srvSocial" value="社群操作">
+                    <label class="service-pill-label" for="srvSocial">社群操作</label>
+
+                    <input type="checkbox" class="service-pill-checkbox" id="srvAds" value="廣告成效分析與優化">
+                    <label class="service-pill-label" for="srvAds">廣告成效分析與優化</label>
+
+                    <input type="checkbox" class="service-pill-checkbox" id="srvWeb" value="建置品牌官網">
+                    <label class="service-pill-label" for="srvWeb">建置品牌官網</label>
+
+                    <input type="checkbox" class="service-pill-checkbox" id="srvStrategy" value="品牌策略">
+                    <label class="service-pill-label" for="srvStrategy">品牌策略</label>
+                  </div>
+                </div>
+
+                <!-- 欄位 6: 預約諮詢日期與偏好時段 -->
+                <div class="col-md-6">
+                  <label for="bookingDate" class="form-label">
+                    偏好諮詢日期
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-calendar-days"></i></span>
+                    <input type="date" class="form-control" id="bookingDate">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingTimeSlot" class="form-label">
+                    偏好時段
+                  </label>
+                  <select class="form-select" id="bookingTimeSlot">
+                    <option value="上午時段 (10:00 - 12:00)">上午時段 (10:00 - 12:00)</option>
+                    <option value="下午時段 (14:00 - 16:00)" selected>下午時段 (14:00 - 16:00)</option>
+                    <option value="傍晚時段 (16:30 - 18:30)">傍晚時段 (16:30 - 18:30)</option>
+                    <option value="晚間時段 (19:30 - 21:00)">晚間時段 (19:30 - 21:00)</option>
+                  </select>
+                </div>
+
+                <!-- 欄位 7: 當前每月行銷預算規模 -->
+                <div class="col-md-12">
+                  <label for="budgetTier" class="form-label">
+                    當前每月行銷預算規模
+                  </label>
+                  <select class="form-select" id="budgetTier">
+                    <option value="5萬以下 / 初期測試">NT$ 5 萬以下 (初期驗證市場需求)</option>
+                    <option value="5萬 - 15萬 / 成長期" selected>NT$ 5 萬 - 15 萬 (穩定獲客成長期)</option>
+                    <option value="15萬 - 30萬 / 擴張期">NT$ 15 萬 - 30 萬 (快速放量擴張)</option>
+                    <option value="30萬以上 / 規模化">NT$ 30 萬以上 (全渠道品牌矩陣)</option>
+                  </select>
+                </div>
+
+                <!-- 欄位 8: 諮詢需求描述 (必填) -->
+                <div class="col-12">
+                  <label for="consultationNeeds" class="form-label">
+                    諮詢需求與當前主要瓶頸簡述 <span class="text-danger">*</span>
+                  </label>
+                  <textarea class="form-control" id="consultationNeeds" rows="4" placeholder="請簡述您的品牌現況、痛點與期望達成的具體目標（例如：目前獲客成本太高、想要重構官網、想建立高轉換文案架構...）" required></textarea>
+                  <div class="invalid-feedback">請簡述您的諮詢需求</div>
+                </div>
+
+                <!-- 送出按鈕 -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold rounded-pill shadow-sm d-flex align-items-center justify-content-center gap-2" id="submitBookingBtn">
+                    <span id="btnText"><i class="fa-solid fa-paper-plane me-1"></i> 確認送出線上預約諮詢</span>
+                    <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                  </button>
+                  <p class="text-center text-muted small mt-2 mb-0">
+                    <i class="fa-solid fa-check text-success"></i> 預約送出後，顧問團隊將在 24 小時內以 Email 與電話確認會議細節
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. 常見問題 FAQ Accordion ================= -->
+  <section class="py-5 bg-white border-top">
+    <div class="container py-3">
+      <div class="section-header text-center">
+        <span class="section-subtitle-tag">FAQ</span>
+        <h2 class="section-main-title">諮詢常見問題解答</h2>
+        <p class="section-desc">在您預約之前，以下整理了企業客戶最常詢問的合作細節</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  Q1. 第一次 30 分鐘諮詢是免費的嗎？會包含哪些內容？
+                </button>
+              </h2>
+              <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  是的，首次 30 分鐘線上會議完全免費。在會議中，Alex 顧問將快速檢視您的現有網站、廣告帳戶結構或 SEO 現況，為您梳理 2-3 個關鍵破局點，並給予初步的執行建議。若評估適合進一步合作，才會提供後續的深度顧問提案報價。
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  Q2. 顧問服務與一般的廣告代操代理商有何不同？
+                </button>
+              </h2>
+              <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  一般代操代理商通常只負責「執行投遞」，往往缺乏對整體商業模型、受眾心理與全漏斗轉換的深度剖析；我們則是從「商業策略」視角出發，將文案、官網體驗、SEO 與廣告無縫串聯，並協助建立內部團隊標準化 SOP，確保每一分行銷投資都能產生長期積累的資產。
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  Q3. 剛起步的初創品牌或個人工作室也適合嗎？
+                </button>
+              </h2>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  非常適合！針對初創品牌，我們專注於 Go-To-Market (GTM) 的精準定位與低成本受眾驗證，協助您避開盲目花錢買曝光的冤枉路，先以高轉換文案與官網建立信任感，再以小預算撬動第一批忠實付費用戶。
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  Q4. 如果我們只需要單一項目服務（如文案撰寫或SEO優化），可以單獨委託嗎？
+                </button>
+              </h2>
+              <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  完全可以！我們所提供的 6 大模組化服務（文案寫手、SEO、社群、廣告優化、官網建置、品牌策略），皆可依據您的當前預算與需求進行單項委託，也可以組合成年度全案顧問方案。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11. 頁尾 (Footer) ================= -->
+  <footer class="footer-polish">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-logo-icon">
+              <span>M</span>
+            </span>
+            <span class="fw-bold fs-5 text-dark tracking-tight">VISIONARY LAB</span>
+          </div>
+          <p class="small text-muted mb-4 pe-lg-4">
+            致力於為成長型企業提供實戰派行銷顧問、品牌策略、SEO自然增長與全漏斗廣告獲客解決方案。以數據為本，驅動持續性商業增長。
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#heroSection" class="btn btn-outline-secondary btn-sm rounded-circle p-2" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#heroSection" class="btn btn-outline-secondary btn-sm rounded-circle p-2" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#heroSection" class="btn btn-outline-secondary btn-sm rounded-circle p-2" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#heroSection" class="btn btn-outline-secondary btn-sm rounded-circle p-2" title="Medium"><i class="fa-brands fa-medium"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">快速導覽</h6>
+          <ul class="footer-links">
+            <li><a href="#heroSection">首頁簡介</a></li>
+            <li><a href="#aboutSection">關於我</a></li>
+            <li><a href="#servicesSection">6 大核心服務</a></li>
+            <li><a href="#casesSection">成功客戶案例</a></li>
+            <li><a href="#contactSection">預約顧問諮詢</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-heading">專業服務項目</h6>
+          <ul class="footer-links">
+            <li><a href="#servicesSection">內容文案寫手</a></li>
+            <li><a href="#servicesSection">SEO策略優化</a></li>
+            <li><a href="#servicesSection">社群操作經營</a></li>
+            <li><a href="#servicesSection">廣告成效分析與優化</a></li>
+            <li><a href="#servicesSection">建置品牌官網</a></li>
+            <li><a href="#servicesSection">全案品牌策略</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="footer-heading">聯絡顧問中心</h6>
+          <p class="small text-muted mb-2">
+            <i class="fa-solid fa-location-dot me-2 text-primary"></i> 台北市信義區松智路 1 號
+          </p>
+          <p class="small text-muted mb-2">
+            <i class="fa-solid fa-envelope me-2 text-primary"></i> alex.consultant@visionarylab.com
+          </p>
+          <p class="small text-muted mb-3">
+            <i class="fa-solid fa-clock me-2 text-primary"></i> 週一至週五 09:30 - 18:30
+          </p>
+          <a href="#contactSection" class="btn btn-outline-primary btn-sm rounded-pill w-100">
+            線上預約 30 分鐘會議
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-4 border-top border-secondary border-opacity-25 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 small text-muted">
+          © 2026 VISIONARY LAB Marketing Consulting. All rights reserved. 響應式網頁設計與策略顧問.
+        </p>
+        <div class="d-flex gap-3 small text-muted">
+          <a href="#contactSection" class="text-muted text-decoration-none">隱私權政策</a>
+          <span>•</span>
+          <a href="#contactSection" class="text-muted text-decoration-none">服務條款</a>
+          <span>•</span>
+          <a href="#contactSection" class="text-muted text-decoration-none">客戶資料保護保證</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 12. 案例詳情互動彈窗 (Case Detail Modal) ================= -->
+  <div class="modal fade" id="caseDetailModal" tabindex="-1" aria-labelledby="caseModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header bg-dark text-white p-4">
+          <div>
+            <span class="badge bg-primary text-white mb-2" id="modalIndustryBadge">產業分類</span>
+            <h4 class="modal-title fw-bold" id="caseModalTitle">案例名稱</h4>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4">
+            <div class="col-12">
+              <h6 class="fw-bold text-primary mb-1"><i class="fa-solid fa-screwdriver-wrench me-1"></i> 導入行銷顧問服務</h6>
+              <p class="text-dark fw-semibold" id="modalServices">服務項目</p>
+            </div>
+            <div class="col-12">
+              <h6 class="fw-bold text-success mb-1"><i class="fa-solid fa-chart-line me-1"></i> 實質增長數據成效</h6>
+              <div class="p-3 bg-success-subtle rounded-3 border border-success-subtle text-dark" id="modalResults">
+                成效數據
+              </div>
+            </div>
+            <div class="col-12">
+              <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-lightbulb text-warning me-1"></i> 顧問策略核心拆解與解法</h6>
+              <p class="text-muted small mb-0" id="modalDetail" style="line-height: 1.8;">
+                策略詳細內容...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-light p-3">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">關閉</button>
+          <a href="#contactSection" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal" id="modalBookSameServiceBtn">
+            諮詢類似策略方案 <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 13. 預約成功確認彈窗 (Booking Success Modal) ================= -->
+  <div class="modal fade" id="bookingSuccessModal" tabindex="-1" aria-labelledby="successModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4 text-center p-4">
+        <div class="my-3">
+          <div class="rounded-circle bg-success-subtle text-success d-inline-flex align-items-center justify-content-center" style="width: 72px; height: 72px; font-size: 2.2rem;">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <h4 class="fw-bold text-dark mb-2" id="successModalTitle">預約諮詢已成功送出！</h4>
+        <p class="text-muted small mb-4" id="successModalMsg">
+          感謝您的預約，我們已收到您的諮詢需求。行銷顧問 Alex 將於 24 小時內透過 Email 寄送確認信與 Google Meet 會議連結。
+        </p>
+
+        <div class="p-3 bg-light rounded-3 text-start small mb-4 border">
+          <div class="d-flex justify-content-between mb-1">
+            <span class="text-muted">預約人姓名：</span>
+            <span class="fw-bold text-dark" id="summaryName">-</span>
+          </div>
+          <div class="d-flex justify-content-between mb-1">
+            <span class="text-muted">聯絡信箱：</span>
+            <span class="fw-bold text-dark" id="summaryEmail">-</span>
+          </div>
+          <div class="d-flex justify-content-between mb-1">
+            <span class="text-muted">諮詢服務項目：</span>
+            <span class="fw-bold text-primary" id="summaryServices">-</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <span class="text-muted">偏好時段：</span>
+            <span class="fw-bold text-dark" id="summarySlot">-</span>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary rounded-pill py-2.5 fw-bold" data-bs-dismiss="modal">
+          好的，我已了解
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 14. 浮動快捷組 (Floating Action Group) ================= -->
+  <div class="floating-action-group">
+    <!-- 回到頂部按鈕 -->
+    <button class="floating-btn btn-back-top" id="btnBackToTop" title="回到頂部">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- 快速預約諮詢按鈕 -->
+    <a href="#contactSection" class="floating-btn btn-float-consult" title="立即預約諮詢" id="btnFloatConsult">
+      <i class="fa-solid fa-comment-dots"></i>
+    </a>
+  </div>
+
+  <!-- ================= 15. Toast 提示容器 ================= -->
+  <div class="toast-container">
+    <div id="actionToast" class="toast align-items-center text-bg-primary border-0 rounded-3 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="fa-solid fa-circle-info fs-5"></i>
+          <span id="toastMessage">已為您在預約表單中選取該項目！</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Bootstrap 5.3.3 JS Bundle CDN ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ================= 16. 原生 JavaScript (Vanilla JS 互動邏輯) ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. 全域 Toast
+      const toastEl = document.getElementById('actionToast');
+      const actionToast = new bootstrap.Toast(toastEl, { delay: 3500 });
+      const toastMsgEl = document.getElementById('toastMessage');
+
+      function showToast(msg, bgClass = 'text-bg-primary') {
+        toastEl.className = `toast align-items-center ${bgClass} border-0 rounded-3 shadow`;
+        toastMsgEl.textContent = msg;
+        actionToast.show();
+      }
+
+      // 2. 導覽列：點擊項目後手機版自動收合
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .btn-nav-cta');
+      const navbarCollapse = document.getElementById('navbarContent');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse) {
+              bsCollapse.hide();
+            }
+          }
+        });
+      });
+
+      // 3. 回到頂部浮動按鈕控制
+      const btnBackToTop = document.getElementById('btnBackToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+          btnBackToTop.classList.add('show');
+        } else {
+          btnBackToTop.classList.remove('show');
+        }
+      });
+
+      btnBackToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 4. 服務卡片「預約此項目諮詢」自動勾選並捲動至表單
+      const serviceSelectButtons = document.querySelectorAll('.service-select-btn');
+      const serviceCheckboxes = {
+        '內容文案寫手': document.getElementById('srvCopy'),
+        'SEO策略優化': document.getElementById('srvSeo'),
+        '社群操作': document.getElementById('srvSocial'),
+        '廣告成效分析與優化': document.getElementById('srvAds'),
+        '建置品牌官網': document.getElementById('srvWeb'),
+        '品牌策略': document.getElementById('srvStrategy')
+      };
+
+      serviceSelectButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const serviceName = btn.getAttribute('data-service');
+          
+          // 自動勾選對應之複選框
+          if (serviceCheckboxes[serviceName]) {
+            serviceCheckboxes[serviceName].checked = true;
+          }
+
+          // 自動填入需求描述框提示
+          const needsTextarea = document.getElementById('consultationNeeds');
+          if (needsTextarea && !needsTextarea.value.includes(serviceName)) {
+            needsTextarea.value = `我們想進一步了解【${serviceName}】的顧問方案與實務執行細節。\n目前團隊面臨的瓶頸為：`;
+          }
+
+          // 平滑捲動至預約表單
+          const contactSec = document.getElementById('contactSection');
+          contactSec.scrollIntoView({ behavior: 'smooth' });
+
+          showToast(`已為您在下方表單選取「${serviceName}」服務項目！`, 'text-bg-primary');
+        });
+      });
+
+      // 5. 英雄區快速痛點帶入
+      const heroQuickSubmitBtn = document.getElementById('heroQuickSubmitBtn');
+      const heroQuickPainPoint = document.getElementById('heroQuickPainPoint');
+      if (heroQuickSubmitBtn && heroQuickPainPoint) {
+        heroQuickSubmitBtn.addEventListener('click', () => {
+          const selectedService = heroQuickPainPoint.value;
+          if (serviceCheckboxes[selectedService]) {
+            serviceCheckboxes[selectedService].checked = true;
+          }
+          const needsTextarea = document.getElementById('consultationNeeds');
+          if (needsTextarea) {
+            needsTextarea.value = `我們面臨的主要痛點是：${heroQuickPainPoint.options[heroQuickPainPoint.selectedIndex].text}。\n希望能針對【${selectedService}】進行深入診斷與突破。`;
+          }
+          document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
+          showToast(`已將「${selectedService}」帶入諮詢表單！`, 'text-bg-primary');
+        });
+      }
+
+      // 6. 客戶案例分類篩選
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const caseItems = document.querySelectorAll('.case-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterVal = btn.getAttribute('data-filter');
+          caseItems.forEach(item => {
+            if (filterVal === 'all' || item.getAttribute('data-category') === filterVal) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 7. 案例詳情彈窗 (Modal)
+      const caseDetailModalEl = document.getElementById('caseDetailModal');
+      const caseDetailModal = new bootstrap.Modal(caseDetailModalEl);
+      const viewCaseBtns = document.querySelectorAll('.view-case-btn');
+
+      viewCaseBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.getElementById('caseModalTitle').textContent = btn.getAttribute('data-title');
+          document.getElementById('modalIndustryBadge').textContent = btn.getAttribute('data-industry');
+          document.getElementById('modalServices').textContent = btn.getAttribute('data-services');
+          document.getElementById('modalResults').textContent = btn.getAttribute('data-results');
+          document.getElementById('modalDetail').textContent = btn.getAttribute('data-detail');
+          caseDetailModal.show();
+        });
+      });
+
+      // 8. ROI 增長效益試算器互動邏輯
+      const budgetRange = document.getElementById('budgetRange');
+      const budgetDisplay = document.getElementById('budgetDisplay');
+      const calcIndustry = document.getElementById('calcIndustry');
+      const estRevenue = document.getElementById('estRevenue');
+      const estRoas = document.getElementById('estRoas');
+      const estCpa = document.getElementById('estCpa');
+      const estTraffic = document.getElementById('estTraffic');
+
+      function updateCalculator() {
+        const budget = parseInt(budgetRange.value, 10);
+        const multiplier = parseFloat(calcIndustry.value);
+        
+        budgetDisplay.textContent = `NT$ ${budget.toLocaleString()}`;
+        
+        const calcRev = Math.round(budget * (multiplier + 1.8));
+        estRevenue.textContent = `+ NT$ ${calcRev.toLocaleString()}`;
+        
+        const roasVal = (multiplier + 1.8).toFixed(1);
+        estRoas.textContent = `${roasVal}x 預估回報`;
+
+        if (budget > 300000) {
+          estCpa.textContent = "-40% ~ -55%";
+          estTraffic.textContent = "+ 380%";
+        } else {
+          estCpa.textContent = "-30% ~ -45%";
+          estTraffic.textContent = "+ 220%";
+        }
+      }
+
+      if (budgetRange && calcIndustry) {
+        budgetRange.addEventListener('input', updateCalculator);
+        calcIndustry.addEventListener('change', updateCalculator);
+      }
+
+      // 9. 預設預約諮詢日期為明天
+      const bookingDateInput = document.getElementById('bookingDate');
+      if (bookingDateInput) {
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const yyyy = tomorrow.getFullYear();
+        const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+        const dd = String(tomorrow.getDate()).padStart(2, '0');
+        bookingDateInput.value = `${yyyy}-${mm}-${dd}`;
+        bookingDateInput.min = `${yyyy}-${mm}-${dd}`;
+      }
+
+      // 10. 表單驗證與送出模擬
+      const bookingForm = document.getElementById('consultationBookingForm');
+      const submitBookingBtn = document.getElementById('submitBookingBtn');
+      const btnText = document.getElementById('btnText');
+      const btnSpinner = document.getElementById('btnSpinner');
+      const bookingSuccessModal = new bootstrap.Modal(document.getElementById('bookingSuccessModal'));
+
+      if (bookingForm) {
+        bookingForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+
+          if (!bookingForm.checkValidity()) {
+            bookingForm.classList.add('was-validated');
+            showToast('請完整填寫必填欄位（姓名、Email、電話與需求簡述）', 'text-bg-danger');
+            return;
+          }
+
+          // 獲取選取之服務項目
+          const selectedServices = [];
+          document.querySelectorAll('.service-pill-checkbox:checked').forEach(cb => {
+            selectedServices.push(cb.value);
+          });
+          const servicesStr = selectedServices.length > 0 ? selectedServices.join('、') : '由顧問依現況提供建議';
+
+          // 顯示 Loading 狀態
+          submitBookingBtn.disabled = true;
+          btnText.textContent = '正在為您處理預約...';
+          btnSpinner.classList.remove('d-none');
+
+          // 模擬非同步請求
+          setTimeout(() => {
+            submitBookingBtn.disabled = false;
+            btnText.innerHTML = '<i class="fa-solid fa-paper-plane me-1"></i> 確認送出線上預約諮詢';
+            btnSpinner.classList.add('d-none');
+
+            // 填入確認彈窗資訊
+            const nameVal = document.getElementById('clientName').value;
+            const emailVal = document.getElementById('clientEmail').value;
+            const dateVal = document.getElementById('bookingDate').value || '由顧問安排';
+            const slotVal = document.getElementById('bookingTimeSlot').value;
+
+            document.getElementById('summaryName').textContent = nameVal;
+            document.getElementById('summaryEmail').textContent = emailVal;
+            document.getElementById('summaryServices').textContent = servicesStr;
+            document.getElementById('summarySlot').textContent = `${dateVal} ${slotVal}`;
+
+            // 顯示成功 Modal
+            bookingSuccessModal.show();
+
+            // 重設表單狀態
+            bookingForm.reset();
+            bookingForm.classList.remove('was-validated');
+
+            // 重新預設日期
+            if (bookingDateInput) {
+              const tomorrow = new Date();
+              tomorrow.setDate(tomorrow.getDate() + 1);
+              const yyyy = tomorrow.getFullYear();
+              const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+              const dd = String(tomorrow.getDate()).padStart(2, '0');
+              bookingDateInput.value = `${yyyy}-${mm}-${dd}`;
+            }
+          }, 900);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

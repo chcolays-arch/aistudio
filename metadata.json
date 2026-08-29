@@ -1,0 +1,6 @@
+{
+  "name": "行銷顧問專業諮詢與服務官網",
+  "description": "提供專業行銷顧問服務、內容文案、SEO策略、社群操作、廣告優化、品牌官網建置與品牌策略，並具備客戶案例展示與線上預約諮詢功能的現代化響應式網站。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
